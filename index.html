@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Profesional | Sistem Informasi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #1e3c72;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .about-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .grid-projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Bagian Gambar Portofolio */
+        .card-img-container {
+            width: 100%;
+            height: 200px;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            color: #2a5298;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .badge {
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Halo, Saya Ifra Mahasiswa Sistem Informasi</h1>
+        <p>Fokus pada Desain Aplikasi dan Rancang Bangun Aplikasi Website</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- BIOGRAFI SINGKAT -->
+        <div class="section">
+            <h2>Tentang Saya</h2>
+            <div class="about-box">
+                <p>Saya adalah mahasiswa Sistem Informasi yang berfokus pada pengembangan aplikasi web, desain antarmuka dan pengalaman pengguna (UI/UX), serta implementasi sistem pendukung keputusan. Saya memiliki ketertarikan dalam membangun aplikasi yang efisien, mudah digunakan, dan memberikan solusi terhadap kebutuhan pengguna melalui pemanfaatan teknologi informasi.</p>
+            </div>
+        </div>
+
+        <!-- DAFTAR PROYEK (Bisa Diisi Gambar) -->
+        <div class="section">
+            <h2>Proyek Unggulan</h2>
+            <div class="grid-projects">
+                
+                <!-- Proyek 1: Desain UI/UX Aplikasi E-Commerce Berbasis Mobile -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/desain figma.png" alt="Desain UI/UX Aplikasi E-Commerce Berbasis Mobile">
+                    </div>
+                    <div class="card-content">
+                        <h3>Desain UI/UX Aplikasi E-Commerce Berbasis Mobile</h3>
+                        <p>Merancang antarmuka (UI) dan pengalaman pengguna (UX) aplikasi e-commerce berbasis mobile yang berfokus pada kemudahan navigasi, tampilan yang menarik, serta pengalaman berbelanja yang nyaman bagi pengguna.</p>
+                        <div class="badge-container">
+                            <span class="badge">UI/UX Design</span>
+                            <span class="badge">Mobile Application</span>
+                            <span class="badge">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 2: Sistem Pendukung Keputusan -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/topsis.png" alt="Sistem Pendukung Keputusan Siswa Terbaik Menggunakan Metode TOPSIS Berbasis Web">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sistem Pendukung Keputusan Siswa Terbaik Menggunakan Metode TOPSIS Berbasis Web</h3>
+                        <p>Membangun sistem pendukung keputusan berbasis web untuk membantu proses pemilihan siswa terbaik menggunakan metode TOPSIS sehingga menghasilkan penilaian yang objektif, akurat, dan transparan berdasarkan berbagai kriteria.</p>
+                        <div class="badge-container">
+                            <span class="badge">Topsis</span>
+                            <span class="badge">Decision Support System</span>
+                            <span class="badge">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 3: Sistem Informasi -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/cuti.png" alt="Sistem Informasi Pengajuan Cuti Pegawai DINSOS Berbasis Web">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sistem Informasi Pengajuan Cuti Pegawai DINSOS Berbasis Web</h3>
+                        <p>Mengembangkan sistem informasi berbasis web untuk mempermudah proses pengajuan, persetujuan, dan pengelolaan cuti pegawai di Dinas Sosial secara lebih cepat, terstruktur, dan terdokumentasi.</p>
+                        <div class="badge-container">
+                            <span class="badge">Web Development</span>
+                            <span class="badge">Laravel</span>
+                            <span class="badge">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Proyek UAS Keamanan Informasi. By Ifra.</p>
+    </footer>
+
+</body>
+</html>
